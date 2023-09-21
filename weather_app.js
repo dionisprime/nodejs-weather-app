@@ -1,6 +1,8 @@
 const { format } = require('date-fns');
 const http = require('http'); // встроенный модуль http
-const server = http.createServer().listen(3000); // создание сервера, порт 3000
+const server = http.createServer().listen(3000, () => {
+    console.log(`Server is listening...`);
+}); // создание сервера, порт 3000
 
 const HOST = 'http://localhost';
 const apiKey = 'f660a2fb1e4bad108d6160b7f58c555f';
@@ -9,7 +11,6 @@ server.on('request', (req, res) => {
     if (req.url === '/favicon.ico') {
         return res.end();
     }
-
     const urlParams = new URL(HOST + req.url); // формируем объект URL с помощью встроенного класса
     const cityName = urlParams.searchParams.get('city');
     const url = `${serverUrl}?q=${cityName}&appid=${apiKey}`;
