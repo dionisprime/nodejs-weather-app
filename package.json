@@ -1,0 +1,14 @@
+{
+    "name": "first-npm",
+    "version": "1.0.0",
+    "description": "firts npm init",
+    "main": "app.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "dionisprime",
+    "license": "ISC",
+    "dependencies": {
+        "date-fns": "^2.30.0"
+    }
+}
