@@ -1,3 +1,5 @@
+Переписал weather app с промисов на async/await
+
 Запускаем сервер командой node weather_app.js
 Вводим в браузере http://localhost:3000/?city=moscow - где вместо moscow можно вписать название другого города.
 Получаем результат погоды в виде строки типа "conditions for Moscow is Rain. Sunset: 19:30"
