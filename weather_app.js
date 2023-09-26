@@ -1,6 +1,6 @@
 const { format } = require('date-fns');
 const http = require('http');
-const server = http.createServer().listen(3001, () => {
+const server = http.createServer().listen(3000, () => {
     console.log('Server is listening...');
 });
 
